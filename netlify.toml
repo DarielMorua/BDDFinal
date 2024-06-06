@@ -1,6 +1,4 @@
- [build]
-    functions="netlify/functions"
-
 [build]
   command = "npm install mysql && npm install && npm run build"
   publish = "public"  # La carpeta donde está tu aplicación compilada
+  functions = "netlify/functions"
