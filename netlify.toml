@@ -3,3 +3,7 @@
 [[edge_functions]]
 function = "hello"
 path = "/test"
+
+[[edge_functions]]
+function = "server"
+path = "/test"
