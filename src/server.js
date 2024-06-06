@@ -9,3 +9,4 @@ const server = new ApolloServer({ typeDefs, resolvers });
 server.listen().then(({ url }) => {
     console.log(`Servidor listo en ${url}`);
 });
+exports.handler = server.createHandler();
