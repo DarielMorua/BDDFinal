@@ -3,9 +3,6 @@ const typeDefs = require('../../src/graphql/typeDefs');
 const resolvers = require('../../src/graphql/resolvers');
 const db = require('../../src/database/db');
 
-
-
-
 const server = new ApolloServer({
   typeDefs,
   resolvers,
@@ -14,8 +11,8 @@ const server = new ApolloServer({
 });
 
 exports.handler = server.createHandler({
-  cors: {
-    origin: '*',
-    credentials: true,
-  },
-});
+    cors: {
+      origin: '*',
+      credentials: true, // sin espacio adicional antes de true
+    },
+  });
